@@ -1,0 +1,40 @@
+hadoop fs -cat FriendsInput/input.txt | head -n 24997 | hadoop fs -copyFromLocal - Folder24997/input24997.txt
+
+hadoop jar /home/ap43n/eclipse-workspace/cs6304_HW01/p1.jar Folder24997/input24997.txt Folder24997/output
+
+hadoop jar /home/ap43n/eclipse-workspace/cs6304_HW01/p2p3.jar Folder24997/output/part-r-00000 Folder24997/p2 Folder24997/p21 Folder24997/p3 Folder24997/p31 
+
+
+hadoop fs -cat FriendsInput/input.txt | head -n 29997 | hadoop fs -copyFromLocal - Folder29997/input29997.txt
+
+hadoop jar /home/ap43n/eclipse-workspace/cs6304_HW01/p1.jar Folder29997/input29997.txt Folder29997/output
+
+hadoop jar /home/ap43n/eclipse-workspace/cs6304_HW01/p2p3.jar Folder29997/output/part-r-00000 Folder29997/p2 Folder29997/p21 Folder29997/p3 Folder29997/p31 
+
+
+hadoop fs -cat FriendsInput/input.txt | head -n 34997 | hadoop fs -copyFromLocal - Folder34997/input34997.txt
+
+hadoop jar /home/ap43n/eclipse-workspace/cs6304_HW01/p1.jar Folder34997/input34997.txt Folder34997/output
+
+hadoop jar /home/ap43n/eclipse-workspace/cs6304_HW01/p2p3.jar Folder34997/output/part-r-00000 Folder34997/p2 Folder34997/p21 Folder34997/p3 Folder34997/p31 
+
+
+hadoop fs -cat FriendsInput/input.txt | head -n 39997 | hadoop fs -copyFromLocal - Folder39997/input39997.txt
+
+hadoop jar /home/ap43n/eclipse-workspace/cs6304_HW01/p1.jar Folder39997/input39997.txt Folder39997/output
+
+hadoop jar /home/ap43n/eclipse-workspace/cs6304_HW01/p2p3.jar Folder39997/output/part-r-00000 Folder39997/p2 Folder39997/p21 Folder39997/p3 Folder39997/p31 
+
+
+hadoop fs -cat FriendsInput/input.txt | head -n 44997 | hadoop fs -copyFromLocal - Folder44997/input44997.txt
+
+hadoop jar /home/ap43n/eclipse-workspace/cs6304_HW01/p1.jar Folder44997/input44997.txt Folder44997/output
+
+hadoop jar /home/ap43n/eclipse-workspace/cs6304_HW01/p2p3.jar Folder44997/output/part-r-00000 Folder44997/p2 Folder44997/p21 Folder44997/p3 Folder44997/p31 
+
+
+hadoop fs -cat FriendsInput/input.txt | head -n 49997 | hadoop fs -copyFromLocal - Folder49997/input49997.txt
+
+hadoop jar /home/ap43n/eclipse-workspace/cs6304_HW01/p1.jar Folder49997/input49997.txt Folder49997/output
+
+hadoop jar /home/ap43n/eclipse-workspace/cs6304_HW01/p2p3.jar Folder49997/output/part-r-00000 Folder49997/p2 Folder49997/p21 Folder49997/p3 Folder49997/p31 
