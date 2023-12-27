@@ -1,24 +1,4 @@
-# Finding Mutual Friends
-
-### Importing Project:
-* Open “eclipse”, right-click on “Package Explorer” window, click import.
-* Select “Git”-> “Projects from Git” and click “next”.
-* Select “clone url” and click “next”.
-* Paste “Github Repository url” in the “url” textbox, and click “next”. 
-* Choose “Import existing project” and click “finish”.
-
-### Referencing libraries:
-* Right click on project and select “build path”-> “configure build path” ->”libraries”->”add external jars”.
-* Go to "home" -> "git" -> "FindingMutualFriends" -> "lib" and select all jars and click ok.
-
-### Input file:
-* You will see the input file named "soc-LiveJournal1Adj.txt"
-
-### Output jar:
-* Right click on project and select "Export".
-* Choose type "Java" -> "Jar file" and click "next".
-* Select the export destination as "home" -> "git" -> "FindingMutualFriends" -> "jar" and click "Finish".
-
+# Hadoop
 ### Hadoop Commands:
 ```
 hadoop fs -mkdir InputFolder                                      //to create a new input folder
@@ -35,7 +15,7 @@ hadoop fs -rm -r OutputFolder                                     //to remove "O
 
 
 ### Common Errors:
-Error 1: mkdir: Call From cs6304-mrpk9-02/127.0.1.1 to localhost:9000 failed on connection exception: java.net.ConnectException: Connection refused  
+Error 1: mkdir: Call From user/127.0.1.1 to localhost:9000 failed on connection exception: java.net.ConnectException: Connection refused  
 Explanation and Fix: In general this error comes if you are running hadoop first time on your VM after a reset. The below commands will fix it.
 ```
 stop-all.sh
@@ -45,7 +25,6 @@ start-all.sh
 You can use the below command to check if namenode, datanode and nodemanager are running.
 ```
 jps
-
 ```
 
 Error 2: mkdir: `hdfs://localhost:9000/user/<username>': No such file or directory  
@@ -57,3 +36,21 @@ hdfs dfs -mkdir -p InputFolder
 
 Warning 1: WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable  
 Fix: You can just ignore this warning.
+
+### Mapper Function:
+  - Processes each input item independently.
+  - Emits key-value pairs based on input data.
+  - Serves as the first step in the MapReduce process, preparing data for reduction.
+
+### Reducer Function:
+  - Receives key-value pairs sorted by key.
+  - Aggregates values associated with each key.
+  - Performs a reduction task, like summarizing, filtering, or combining data.
+
+
+# Question
+![HW_1_2023_page-0001](https://github.com/saadesh71/HadoopMapReduce/assets/43541169/f166bc10-26d1-40f7-bb51-df5388a6e6ab)
+![HW_1_2023_page-0002](https://github.com/saadesh71/HadoopMapReduce/assets/43541169/9bf3f74a-0ef2-4cc1-9192-1fe96884e577)
+![HW_1_2023_page-0003](https://github.com/saadesh71/HadoopMapReduce/assets/43541169/f7cab181-4f0f-4b1c-969f-483f28717d5f)
+
+Dataset: [soc-LiveJournal1Adj.txt](https://mailmissouri-my.sharepoint.com/:t:/g/personal/mrpk9_umsystem_edu/EVTVE564f_RCsylgfdEd46UByQMIu_NrjqNAoSfqevxBhw?e=7XGmZK)
